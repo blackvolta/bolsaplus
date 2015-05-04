@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.sidr.light.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -33,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="css/spectrum.css">
     <script type="text/javascript" src="js/spectrum.js"></script>
     <script type="text/javascript" src="js/jquery.spectrum-es.js"></script>
-
+sdfsdf
 </head>
 
 <body>
@@ -394,94 +395,6 @@
     })
     </script>
 
-    <!--EDITABLE-->
-    <script src="js/jquery.editable.min.js"></script>
-    <script>
-
-        // Define our elements
-        var $log = $('#log').val('');
-        var $editables = $('.editable');
-        var $info = $('#info em');
-
-        /**
-         * Log a text message
-         * @param {String} txt
-         */
-        function log(txt) {
-            var val = $log.val();
-            if(val)
-                val += '\n';
-            val += txt;
-            $log.val( val );
-            $log.scrollTop( $log[0].scrollHeight - $log.height() );
-        }
-
-        /**
-         * Make the elements editable
-         */
-        function makeThingsEditable() {
-            $editables.editable({
-                emptyMessage : '<em>Please write something...</em>',
-                callback : function( data ) {
-                    $info.hide();
-                    $info.eq(0).show();
-                    log('Stopped editing ' + data.$el[0].nodeName );
-                    if( data.content )
-                        log('   * The text was changed');
-                    if( data.fontSize )
-                        log('   * Font size was changed to '+data.fontSize);
-                }
-            });
-            log('jQuery Editable - initiated');
-        }
-
-        // Listen on when elements getting edited
-        $editables.on('edit', function( $textArea ) {
-            $info.hide();
-            $info.eq(1).show();
-            log('Started editing element '+ this.nodeName);
-        });
-
-
-        // Button that starts the editing of the h2 element
-        $('#h2Button').click(function() {
-            $('h2').editable('open');
-        });
-
-
-        // Button that toggles the editable feature
-        $('#removeButton').click(function() {
-            if( $editables.is(':editable') ) {
-                $editables.editable('destroy');
-                this.innerHTML = 'Make elements editable again';
-                log('Remove editable feature');
-            } else {
-                makeThingsEditable();
-                this.innerHTML = 'Remove editable feature';
-            }
-        });
-
-        // Let's go!
-        makeThingsEditable();
-
-    </script>
-
-    <!--Show/Hide-->
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('input[type="checkbox"]').click(function(){
-            if($(this).attr("value")=="red"){
-                $(".red").toggle();
-            }
-            if($(this).attr("value")=="green"){
-                $(".green").toggle();
-            }
-            if($(this).attr("value")=="blue"){
-                $(".blue").toggle();
-            }
-        });
-    });
-    </script>
 
 
 
