@@ -1,0 +1,111 @@
+html {
+	background-color: #f4f4f4;
+}
+body {
+  	padding-top: 0px;
+}
+@media (min-width: 768px) {
+	.main-header__nav-items+.main-header__nav-items {
+	  margin-right: 0;
+	}
+	.main-header__nav-item.main-header__nav-item--user-menu {
+	  padding: 0 20px 0 25px;
+	  margin-right: 100px;
+	}
+}
+.grouped-listing__job-title:hover {
+	background-image: none;
+}
+.grouped-listing {
+  margin: 0;
+}
+div.carousel {
+  height: 50%;
+}
+div.carousel .item,
+div.carousel .item.active,
+div.carousel .carousel-inner {
+    height: 100%;
+}
+div.carousel .fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  bacxºkground-size: cover;
+}
+h2.page-header {
+  font-size: 19px;
+  border-bottom: none;
+  margin: 30px 0 5px;
+}
+.container.description {
+	margin-top: 30px;
+}
+.icon-chevron-thin-left, .icon-chevron-thin-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.navbar-inverse {
+  border-color: #fff;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.main-header__nav-items>li>.dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+@media (min-width: 768px) {
+    .main-header__nav-items .dropdown-menu {
+        right: 0;
+        left: auto
+    }
+    .main-header__nav-items .dropdown-menu-left {
+        right: auto;
+        left: 0
+    }
+}
+
+#sidr {
+  /*display: none;*/
+  /*position: absolute;*/
+  /*position: fixed;*/
+  top: 0;
+  height: 170px;
+  z-index: 999999;
+  width: 100%;
+  overflow-x: none;
+  overflow-y: auto;
+  background: #f8f8f8;
+  color: #333;
+  -webkit-box-shadow: inset 0 0 5px 5px #ebebeb;
+  -moz-box-shadow: inset 0 0 5px 5px #ebebeb;
+  box-shadow: inset 0 0 5px 5px #ebebeb;
+}
+#sidr h2 {
+  margin: 0;
+  font-size: 24px;
+  display: inline-block;
+}
+/*#sidr::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f8f8f8;
+  position: absolute;
+  top: 169px;
+  right: 585px;
+  z-index: 99999;
+}*/
+ul.nav {
+  margin-left: 100px;
+  margin-top: -34px;
+}
+#myCarousel {
+  padding: 0;
+}
