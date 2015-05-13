@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>BolsaPlus RastiCSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/modern-business.css">
+
+    <link rel="stylesheet" type="text/css" href="bumeran.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-events.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/ich.min.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/buildtemplates.js"></script>
+
+  </head>
+  <body>
+    <div id="sidr" style="padding:10px;">
+        <h2>Editar</h2>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">Diseño</a></li>
+                <li><a href="#tab2" data-toggle="tab">Estilos</a></li>
+                <li><a href="#tab3" data-toggle="tab">CV</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    
+                        <h4>Tema</h4>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        <img style="width: 60px; margin-left:10px;" src="img/temp1.jpg">
+                        <input type="radio" style="margin-left:10px;" name="optionsRadios" id="optionsRadios2" value="option2">
+                        <img style="width: 60px; margin-left:10px;" src="img/Temp2.jpg">
+                    <hr>
+                        <h4>Quienes Somos <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="red" checked></h4>
+                    <hr>
+                        <h4>Redes Sociales</h4>
+                        <div class="input-prepend">
+                            Facebook
+                            <input class="span2" id="prependedInput" type="text" placeholder="Usuario">
+                        </div>
+                        <br>
+                        <div class="input-prepend">
+                            Twitter
+                            <input class="span2" id="prependedInput" type="text" placeholder="@Toyota">
+                        </div>
+                    <hr>
+                        <h4>Avisos <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                        <h4>Galer&iacute;a <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                        <input class="input-mini" type="text" placeholder="url">
+                        <br><br>
+                        <button class="btn btn-small btn-primary" type="button">Cargar Imagenes</button>
+                    <hr>
+                        <h4>Banner <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                        <h4>Fotos <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                        <input class="input-mini" type="text" placeholder="url">
+                        <br><br>
+                        <button class="btn btn-small btn-primary" type="button">Cargar Fotos</button>
+                    <hr>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn">Cancelar</button>
+                        </div>
+                    <hr>
+
+                </div>
+                <div class="tab-pane" id="tab2">
+                    
+                    <div class="demoPanel">
+                        <h4>Color</h4>
+                        Títulos <input style="float:right;" type='text' id="custom" placeholder="#fff" />
+                        <br><br>
+                        Texto <input style="float:right;" type='text' id="custom"  placeholder="#fff"/>
+                        <br><br>
+                        Background <input style="float:right;" type='text' id="custom" placeholder="#fff" />
+                        <br><br>
+                        Header <input style="float:right;" type='text' id="custom" placeholder="#fff" />
+                        <br><br>
+                        Links <input style="float:right;" type='text' id="custom" placeholder="#fff" />
+                    </div>
+                    <hr>
+                        <h4>Tipografía</h4>
+                        <select>
+                            <option>Roboto</option>
+                            <option>Droid Sans</option>
+                            <option>Source Sans</option>
+                            <option>Exo</option>
+                        </select>
+                    <hr>
+                    <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn">Cancelar</button>
+                        </div>
+                    <hr>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <h4>Datos personales <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Experiencia Laboral <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Lugar de Residencia <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Presentación/Bio <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Preferencia Salarial <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Estudios <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Idiomas <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Conocimientos <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Referencias <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    <hr>
+                    <h4>Encuesta <input style="float:right;" type="checkbox" id="inlineCheckbox1" value="option1" checked></h4>
+                    Pregunta <input class="input-mini" type="text" placeholder="Pregunta">
+                    <br><br>
+                    <button class="btn btn-small btn-primary" type="button">Cargar Pregunta</button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="main-header">
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="main-header__logo">{{logo de la compañia}}</a>
+
+          <a href="#" class="main-header__menu js-class-toggler hidden-xs" data-element=".main-header__nav-items-standard" data-class="is-open"><span class="icon-menu"></span></a>
+          
+            <a href="#" class="main-header__menu js-class-toggler visible-xs-block" data-element="html" data-class="is-nav-open"><span class="icon-menu"></span></a>  
+          
+          <div class="main-header__nav">
+            <ul class="main-header__nav-items">
+              
+              <li class="dropdown">
+                        <a href="#" class="dropdown-toggle main-header__nav-item main-header__nav-item--dropdown main-header__nav-item--user-menu" data-toggle="dropdown">Nombre de Usuario</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">Datos de la Empresa</a>
+                            </li>
+                            <li>
+                                <a href="#">CVs Cargados <span class="badge badge-info">42</span></a>
+                            </li>
+                            <li>
+                                <a href="">Contraseña</a>
+                            </li>
+                            <li>
+                                <a href="">Cerrar Sesión</a>
+                            </li>
+                        </ul>
+              </li>
+            </ul>
+            
+            <ul class="main-header__nav-items main-header__nav-items-standard">
+                        <li><a id="edit-menu" href="#sidr" class="main-header__nav-item">Editar</a></li>
+              <li><a href="#services.html" class="main-header__nav-item">Oportunidades Laborales</a></li>
+              <li><a href="#contact.html" class="main-header__nav-item">Contacto</a></li>
+            </ul>
+          </div>      
+        </div>
+      </div>
+    </header>
+    
+
+
+    
+    <div id="myCarousel" class="carousel slide col-md-12">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Texto Slide 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Texto Slide 2</h2>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Texto Slide 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-chevron-thin-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-chevron-thin-right"></span>
+        </a>
+    </div><!-- /.Carousel -->
+
+
+    <div class="container description">
+        <!-- Features Section -->
+          <div class="row">
+            <div id="element" class="col-sm-8 red">
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">Quienes Somosvs</h2>
+
+                <p class="editable" data-edit-event="dblclick.textEditor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus ante, aliquam eu mattis sit amet, volutpat non turpis. Quisque eget porttitor sem. In at egestas sem. Sed varius tortor eu nisl euismod hendrerit. Pellentesque bibendum porta fermentum. Etiam pulvinar vitae nibh sed rutrum.<br>
+                Etiam malesuada, augue at eleifend faucibus, dolor risus finibus enim, at tincidunt felis dolor non magna. Nulla neque tortor, pharetra eu ullamcorper id, eleifend at nisi. Maecenas aliquam, ipsum id lacinia congue, orci dolor rhoncus magna, mollis condimentum purus neque ut urna. Ut sagittis leo eget rhoncus lobortis. Nullam in augue pellentesque, faucibus ex et, ultrices nunc.</p>
+            </div>
+
+            <div class="col-sm-4">
+                <h2 class="page-header editable">Twitter</h2>
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%40toyota" data-widget-id="350685545548095489">Tweets sobre @toyota</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">
+                   Oportunidades Laborales
+                </h2>
+                <div class="grouped-listing">
+                  <div class="grouped-listing__inner">
+                    <div class="grouped-listing__company-name">
+                        <h4><i class="fa fa-fw fa-check"></i> Oportunidad 1</h4>
+                    </div>
+                    <div class="grouped-listing__job-title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn--default btn--sm">Postularme</a>
+                    </div>
+                  </div>
+                </div><!-- /.grouped-listing -->
+                <div class="grouped-listing">
+                  <div class="grouped-listing__inner">
+                    <div class="grouped-listing__company-name">
+                        <h4><i class="fa fa-fw fa-check"></i> Oportunidad 2</h4>
+                    </div>
+                    <div class="grouped-listing__job-title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn--default btn--sm">Postularme</a>
+                    </div>
+                  </div>
+                </div><!-- /.grouped-listing -->
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">Galería</h2>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+                        <div class="item active">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-chevron-thin-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-chevron-thin-right"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div><!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+            <div class="well">
+                <div class="row">
+                  <div class="col-md-8 editable" data-edit-event="dblclick.textEditor">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                  </div>
+                    <div class="col-md-4">
+                        <a class="btn btn--primary btn--block btn--lg" href="#">Call to Action</a>
+                    </div>
+                </div>
+            </div>
+
+        <hr>
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">Nuestra empresa</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Un servicio de © <a href="http://bumeran.com" target="_blank">bumeran.com</a> 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <div class="js-template-footer" data-template-file="footer" data-json-file="footer"></div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').casrousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+    <!--EDITABLE-->
+    <script src="js/jquery.editable.min.js"></script>
+    <script>
+
+        // Define our elements
+        var $log = $('#log').val('');
+        var $editables = $('.editable');
+        var $info = $('#info em');
+
+        /**
+         * Log a text message
+         * @param {String} txt
+         */
+        function log(txt) {
+            var val = $log.val();
+            if(val)
+                val += '\n';
+            val += txt;
+            $log.val( val );
+            $log.scrollTop( $log[0].scrollHeight - $log.height() );
+        }
+
+        /**
+         * Make the elements editable
+         */
+        function makeThingsEditable() {
+            $editables.editable({
+                emptyMessage : '<em>Please write something...</em>',
+                callback : function( data ) {
+                    $info.hide();
+                    $info.eq(0).show();
+                    log('Stopped editing ' + data.$el[0].nodeName );
+                    if( data.content )
+                        log('   * The text was changed');
+                    if( data.fontSize )
+                        log('   * Font size was changed to '+data.fontSize);
+                }
+            });
+            log('jQuery Editable - initiated');
+        }
+
+        // Listen on when elements getting edited
+        $editables.on('edit', function( $textArea ) {
+            $info.hide();
+            $info.eq(1).show();
+            log('Started editing element '+ this.nodeName);
+        });
+
+
+        // Button that starts the editing of the h2 element
+        $('#h2Button').click(function() {
+            $('h2').editable('open');
+        });
+
+
+        // Button that toggles the editable feature
+        $('#removeButton').click(function() {
+            if( $editables.is(':editable') ) {
+                $editables.editable('destroy');
+                this.innerHTML = 'Make elements editable again';
+                log('Remove editable feature');
+            } else {
+                makeThingsEditable();
+                this.innerHTML = 'Remove editable feature';
+            }
+        });
+
+        // Let's go!
+        makeThingsEditable();
+
+    </script>
+
+    <!--Show/Hide-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+            if($(this).attr("value")=="red"){
+                $(".red").toggle();
+            }
+            if($(this).attr("value")=="green"){
+                $(".green").toggle();
+            }
+            if($(this).attr("value")=="blue"){
+                $(".blue").toggle();
+            }
+        });
+    });
+    </script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
