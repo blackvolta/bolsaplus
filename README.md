@@ -1,3 +1,3 @@
 # bolsaPlus
 
-Refactoring of bolsaPlus brand according Rasti CSS web UI Framework. 
+BolsaPlus refactoring according Rasti CSS web UI Framework. 
