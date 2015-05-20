@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>BolsaPlus RastiCSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/modern-business.css">
+    <link rel="stylesheet" type="text/css" href="css/bumeran.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-events.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/ich.min.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/buildtemplates.js"></script>
+
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="main-header__logo">{{logo de la compañia}}</a>
+
+          <a href="#" class="main-header__menu js-class-toggler hidden-xs" data-element=".main-header__nav-items-standard" data-class="is-open"><span class="icon-menu"></span></a>
+          
+            <a href="#" class="main-header__menu js-class-toggler visible-xs-block" data-element="html" data-class="is-nav-open"><span class="icon-menu"></span></a>  
+          
+          <div class="main-header__nav">
+            
+            <ul class="main-header__nav-items">
+              
+              <li class="dropdown">
+                        <a href="#" class="dropdown-toggle main-header__nav-item config" data-toggle="dropdown"><i class="icon-cog"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">Temas</a>
+                            </li>
+                            <li>
+                                <a href="#">Widgets</a>
+                            </li>
+                            <li>
+                                <a href="#">Colores</a>
+                            </li>
+                            <li>
+                                <a href="#">Tipografía</a>
+                            </li>
+                        </ul>
+              </li>
+            </ul>
+            <ul class="main-header__nav-items">
+              
+              <li class="dropdown">
+                        <a href="#" class="dropdown-toggle main-header__nav-item main-header__nav-item--dropdown main-header__nav-item--user-menu" data-toggle="dropdown">Nombre de Usuario</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">Datos de la Empresa</a>
+                            </li>
+                            <li>
+                                <a href="#">CVs Cargados <span class="badge badge-info">42</span></a>
+                            </li>
+                            <li>
+                                <a href="">Contraseña</a>
+                            </li>
+                            <li>
+                                <a href="">Cerrar Sesión</a>
+                            </li>
+                        </ul>
+              </li>
+            </ul>
+            
+            <ul class="main-header__nav-items main-header__nav-items-standard">
+              <li><a href="#services.html" class="main-header__nav-item">Oportunidades Laborales</a></li>
+              <li><a href="#contact.html" class="main-header__nav-item">Contacto</a></li>
+            </ul>
+          </div>      
+        </div>
+      </div>
+    </header>
+    
+    
+    <div id="myCarousel" class="carousel slide col-md-12">
+        <div class="hover-slider">
+            <i class="icon-edit"></i>
+        </div><!-- hover-slider -->
+        
+        <!-- Indicators
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        </ol> -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Imagen 1');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Imagen 2');"></div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Imagen 3');"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-chevron-thin-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-chevron-thin-right"></span>
+        </a>
+    </div><!-- /.Carousel -->
+
+
+    <div class="container description">
+        <!-- Features Section -->
+      <div class="row">
+        <div class="col-sm-8">          
+            <div id="element" class="red qsomos">
+                <a href="#" class="close"><i class="icon-cross"></i></a>
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">Quienes Somos</h2>
+
+                <p class="editable" data-edit-event="dblclick.textEditor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus ante, aliquam eu mattis sit amet, volutpat non turpis. Quisque eget porttitor sem. In at egestas sem. Sed varius tortor eu nisl euismod hendrerit. Pellentesque bibendum porta fermentum. Etiam pulvinar vitae nibh sed rutrum.<br>
+                Etiam malesuada, augue at eleifend faucibus, dolor risus finibus enim, at tincidunt felis dolor non magna. Nulla neque tortor, pharetra eu ullamcorper id, eleifend at nisi. Maecenas aliquam, ipsum id lacinia congue, orci dolor rhoncus magna, mollis condimentum purus neque ut urna. Ut sagittis leo eget rhoncus lobortis. Nullam in augue pellentesque, faucibus ex et, ultrices nunc.</p>
+            </div>
+            <div class="jobs">
+                            <h2 class="page-header editable" data-edit-event="dblclick.textEditor">
+                               Oportunidades Laborales
+                            </h2>
+                            <a href="#" class="close"><i class="icon-cross"></i></a>
+                            <div class="grouped-listing">
+                              <div class="grouped-listing__inner">
+                                <div class="grouped-listing__company-name">
+                              <a href="#" class="close"><i class="icon-cross"></i></a>
+                                    <h4><i class="fa fa-fw fa-check"></i> Oportunidad 1</h4>
+                                </div>
+                                <div class="grouped-listing__job-title">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                    <a href="#" class="btn btn--default btn--sm">Postularme</a>
+                                </div>
+                              </div>
+                            </div><!-- /.grouped-listing -->
+                            <div class="grouped-listing">
+                              <div class="grouped-listing__inner">
+                                <div class="grouped-listing__company-name">
+                              <a href="#" class="close"><i class="icon-cross"></i></a>
+                                    <h4><i class="fa fa-fw fa-check"></i> Oportunidad 2</h4>
+                                </div>
+                                <div class="grouped-listing__job-title">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                                    <a href="#" class="btn btn--default btn--sm">Postularme</a>
+                                </div>
+                              </div>
+                            </div><!-- /.grouped-listing -->
+            </div><!-- /.jobs -->
+        </div><!-- /.row -->
+        <div class="col-sm-4 widgets">
+            <div class="socialtw">
+            <a href="#" class="close"><i class="icon-cross"></i></a>
+                <h2 class="page-header editable">Twitter</h2>
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%40toyota" data-widget-id="350685545548095489">Tweets sobre @toyota</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+            <div class="gallery">
+            <a href="#" class="close"><i class="icon-cross"></i></a>
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">Galería</h2>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+                        <div class="item active">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-chevron-thin-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-chevron-thin-right"></span>
+                    </a>
+                </div> 
+            </div>
+        </div><!-- /.row -->
+    
+    </div><!-- /.description -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+            <div class="well">
+            <a href="#" class="close"><i class="icon-cross"></i></a>
+                <div class="row">
+                  <div class="col-md-8 editable" data-edit-event="dblclick.textEditor">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                  </div>
+                    <div class="col-md-4">
+                        <a class="btn btn--primary btn--block btn--lg" href="#">Call to Action</a>
+                    </div>
+                </div>
+            </div>
+
+        <hr>
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header editable" data-edit-event="dblclick.textEditor">Nuestra empresa</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Un servicio de © <a href="http://bumeran.com" target="_blank">bumeran.com</a> 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /.container -->
+
+
+    <div class="js-template-footer" data-template-file="footer" data-json-file="footer"></div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').casrousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+    <!--EDITABLE-->
+    <script src="js/jquery.editable.min.js"></script>
+    <script>
+
+        // Define our elements
+        var $log = $('#log').val('');
+        var $editables = $('.editable');
+        var $info = $('#info em');
+
+        /**
+         * Log a text message
+         * @param {String} txt
+         */
+        function log(txt) {
+            var val = $log.val();
+            if(val)
+                val += '\n';
+            val += txt;
+            $log.val( val );
+            $log.scrollTop( $log[0].scrollHeight - $log.height() );
+        }
+
+        /**
+         * Make the elements editable
+         */
+        function makeThingsEditable() {
+            $editables.editable({
+                emptyMessage : '<em>Please write something...</em>',
+                event : 'click',
+                callback : function( data ) {
+                    $info.hide();
+                    $info.eq(0).show();
+                    log('Stopped editing ' + data.$el[0].nodeName );
+                    if( data.content )
+                        log('   * The text was changed');
+                    if( data.fontSize )
+                        log('   * Font size was changed to '+data.fontSize);
+                }
+            });
+            log('jQuery Editable - initiated');
+        }
+
+        // Listen on when elements getting edited
+        $editables.on('edit', function( $textArea ) {
+            $info.hide();
+            $info.eq(1).show();
+            log('Started editing element '+ this.nodeName);
+        });
+
+
+        // Button that starts the editing of the h2 element
+        $('#h2Button').click(function() {
+            $('h2').editable('open');
+        });
+
+
+        // Button that toggles the editable feature
+        $('#removeButton').click(function() {
+            if( $editables.is(':editable') ) {
+                $editables.editable('destroy');
+                this.innerHTML = 'Make elements editable again';
+                log('Remove editable feature');
+            } else {
+                makeThingsEditable();
+                this.innerHTML = 'Remove editable feature';
+            }
+        });
+
+        // Let's go!
+        makeThingsEditable();
+
+    </script>
+
+    <!--Show/Hide-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+            if($(this).attr("value")=="red"){
+                $(".red").toggle();
+            }
+            if($(this).attr("value")=="green"){
+                $(".green").toggle();
+            }
+            if($(this).attr("value")=="blue"){
+                $(".blue").toggle();
+            }
+        });
+    });
+    </script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>

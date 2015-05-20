@@ -60,6 +60,19 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
+  //agregada por adrian
+  grunt.registerTask('runNode', function () {
+    grunt.util.spawn({
+      cmd: 'node',
+      args: ['./node_modules/nodemon/nodemon.js','--harmony' , 'index.js'],
+      opts: {
+        stdio: 'inherit'
+      }
+    }, function () {
+      grunt.fail.fatal(new Error("nodemon quit"));
+    });
+  });
+
   grunt.registerTask('default', ['less','autoprefixer','cssmin',]);
- 
+  grunt.registerTask('server', ['less', 'runNode']);
 };

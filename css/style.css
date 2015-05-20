@@ -109,3 +109,78 @@ ul.nav {
 #myCarousel {
   padding: 0;
 }
+.description .row:first-child {
+  padding-top: 20px;
+}
+.qsomos {
+  border: 1px solid transparent;
+  padding: 10px;
+}
+.qsomos:hover {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #F9F9F9;
+}
+.qsomos p, .qsomos h2 {
+  border-radius: 5px;
+  padding: 5px;
+}
+.qsomos:hover p, .qsomos:hover h2 {
+  background-color: #EDEDED;
+  cursor: pointer;
+}
+.qsomos:hover p::before, .qsomos:hover h2::before {
+  content: "\e639";
+  font-family: "bumeranicons";
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  font-size: 16px;
+}
+.config {
+  padding: 0 20px 0 25px;
+}
+.hover-slider {
+  display: none;
+  background: url('../img/bg.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 55;
+}
+#myCarousel:hover .hover-slider {
+  display: block;
+  cursor: pointer;
+}
+.hover-slider i {
+  color: #fff;
+  padding-left: 50%;
+  padding-top: 10%;
+  position: absolute;
+}
+.hover-slider i::before {
+  font-size: 30px;
+  margin-left: -10px;
+}
+.widgets {
+  background-color: #ddd;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  padding: 10px 15px 15px 15px;
+}
+.icon-cross {
+  display: none;
+}
+.grouped-listing:hover .icon-cross, .qsomos:hover .icon-cross, .socialtw:hover .icon-cross, .gallery:hover .icon-cross, .well:hover .icon-cross {
+  display: block;
+  float: right;
+}
+.grouped-listing {
+  padding: 10px;
+}
+.well {
+  padding: 14px 15px 30px;
+}
+.well .row {
+  margin-top: 24px;
+}
