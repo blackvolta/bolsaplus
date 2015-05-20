@@ -164,11 +164,27 @@
             </div><!-- /.jobs -->
         </div><!-- /.row -->
         <div class="col-sm-4 widgets">
-            <div class="socialtw">
-            <a href="#" class="close"><i class="icon-cross"></i></a>
+            <div class="social tw">
+                <a href="#" class="close"><i class="icon-cross"></i></a>
                 <h2 class="page-header editable">Twitter</h2>
                 <a class="twitter-timeline" href="https://twitter.com/search?q=%40toyota" data-widget-id="350685545548095489">Tweets sobre @toyota</a>
+                
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+            <div class="social fb">
+                <a href="#" class="close"><i class="icon-cross"></i></a>
+                <h2 class="page-header editable">Facebook</h2>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+                <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-order-by="reverse_time" data-width="100%" data-numposts="4" data-colorscheme="light"></div>
             </div>
 
             <div class="gallery">
