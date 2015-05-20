@@ -184,3 +184,14 @@ ul.nav {
 .well .row {
   margin-top: 24px;
 }
+.modal-body {
+  margin: 0 auto;
+  width: 300px;
+}
+.modal-dialog a {
+  padding: 10px;
+  display: inline-block;
+}
+.modal-dialog a:hover {
+  background-color: #ececec;
+}

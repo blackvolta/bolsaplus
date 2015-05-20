@@ -20,8 +20,10 @@
     <script src="js/helpers.js"></script>
     <script src="js/buildtemplates.js"></script>
 
+
   </head>
   <body>
+
     <header class="main-header">
       <div class="container">
         <div class="row">
@@ -39,16 +41,16 @@
                         <a href="#" class="dropdown-toggle main-header__nav-item config" data-toggle="dropdown"><i class="icon-cog"></i></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="">Temas</a>
+                                <a href="#" data-toggle="modal" data-target="#mdl-diagramacion">Diagramación</a>
                             </li>
                             <li>
-                                <a href="#">Widgets</a>
+                                <a href="#" data-toggle="modal" data-target="#mdl-widgets">Widgets</a>
                             </li>
                             <li>
-                                <a href="#">Colores</a>
+                                <a href="#" data-toggle="modal" data-target="#mdl-colores">Colores</a>
                             </li>
                             <li>
-                                <a href="#">Tipografía</a>
+                                <a href="#" data-toggle="modal" data-target="#mdl-tipografia">Tipografía</a>
                             </li>
                         </ul>
               </li>
@@ -260,6 +262,80 @@
 
 
     <div class="js-template-footer" data-template-file="footer" data-json-file="footer"></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mdl-diagramacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal__close" data-dismiss="modal">×</span>
+            <h4 class="modal-title" id="myModalLabel">Diagramación</h4>
+          </div>
+          <div class="modal-body">
+            <a href="#"><img src="img/temp1.png"></a>
+            <a href="#"><img src="img/temp2.png"></a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn--default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn--primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mdl-widgets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal__close" data-dismiss="modal">×</span>
+            <h4 class="modal-title" id="myModalLabel">Widgets</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mdl-colores" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal__close" data-dismiss="modal">×</span>
+            <h4 class="modal-title" id="myModalLabel">Colores</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mdl-tipografia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal__close" data-dismiss="modal">×</span>
+            <h4 class="modal-title" id="myModalLabel">Tipografía</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
